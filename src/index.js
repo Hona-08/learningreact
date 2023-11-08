@@ -1,36 +1,20 @@
 import React from 'react';
 import ReactDom  from 'react-dom';
 
-//stateless functional component
-//always return JSX
-//div / section / article or Fragment
-//use camelCase for html attribute
-//className instead of class
-//close every element
-//formatting
+//Nested components, React Tools
 
 function Greeting() {
   return (
     <div>
-      <h1>Hello world</h1>
-      <ul>
-        <li>
-        <a href='#'>hellow world</a>
-        </li>
-        <img src='' alt='' />
-        <input type='text' name='' id='' />
-      </ul>
+      <Person/>
+      <Message/>
     </div>
   );
 }
 
-//arrow function 
-// const Greeting = () =>{
-//   return React.createElement(
-//   'di',
-//   {},
-//   React.createElement('h1', {}, 'hello world')
-//   );
-// };
+const Person = () => <h2>Hona</h2>;
+const Message = () => {
+  return <p>my Message</p>
+};
 
 ReactDom.render(<Greeting/>, document.getElementById('root'));
