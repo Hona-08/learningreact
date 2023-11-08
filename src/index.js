@@ -3,11 +3,23 @@ import ReactDom  from 'react-dom';
 
 //stateless functional component
 //always return JSX
+//div / section / article or Fragment
+//use camelCase for html attribute
+//className instead of class
+//close every element
+//formatting
 
-function Greeting(){
+function Greeting() {
   return (
     <div>
-    <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <ul>
+        <li>
+        <a href='#'>hellow world</a>
+        </li>
+        <img src='' alt='' />
+        <input type='text' name='' id='' />
+      </ul>
     </div>
   );
 }
